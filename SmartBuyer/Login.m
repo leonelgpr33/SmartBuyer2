@@ -6,13 +6,13 @@
 //  Copyright (c) 2015 LI Leonel G. Pérez Ramos. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "Login.h"
 
-@interface ViewController ()
+@interface Login ()
 
 @end
 
-@implementation ViewController
+@implementation Login
 
 - (void)viewDidLoad {
     [super viewDidLoad];
