@@ -7,6 +7,8 @@
 //
 
 #import "Login.h"
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
 
 @interface Login ()
 
@@ -17,6 +19,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    if ([FBSDKAccessToken currentAccessToken]) {
+        // User is logged in, do work such as go to next view controller.
+        
+        NSLog(@"te loggeaste cabrón");
+        [self performSegueWithIdentifier:@"GoToPresupuesto" sender:self];
+        
+    }
 }
 
 - (void)didReceiveMemoryWarning {

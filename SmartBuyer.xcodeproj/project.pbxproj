@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B998BE651AC8CC63000CD1C6 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B998BE631AC8CC63000CD1C6 /* FBSDKCoreKit.framework */; };
+		B998BE661AC8CC63000CD1C6 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B998BE641AC8CC63000CD1C6 /* FBSDKLoginKit.framework */; };
+		B998BE691AC8D4D0000CD1C6 /* Presupuesto.m in Sources */ = {isa = PBXBuildFile; fileRef = B998BE681AC8D4D0000CD1C6 /* Presupuesto.m */; };
+		B998BE701AC8E331000CD1C6 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B998BE6F1AC8E331000CD1C6 /* MenuViewController.m */; };
+		B998BE741AC8E488000CD1C6 /* Principal.m in Sources */ = {isa = PBXBuildFile; fileRef = B998BE731AC8E488000CD1C6 /* Principal.m */; };
 		B99F17E21AC8C21500AD0B2A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B99F17E11AC8C21500AD0B2A /* main.m */; };
 		B99F17E51AC8C21500AD0B2A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B99F17E41AC8C21500AD0B2A /* AppDelegate.m */; };
 		B99F17E81AC8C21500AD0B2A /* Login.m in Sources */ = {isa = PBXBuildFile; fileRef = B99F17E71AC8C21500AD0B2A /* Login.m */; };
@@ -33,6 +38,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B998BE631AC8CC63000CD1C6 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		B998BE641AC8CC63000CD1C6 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		B998BE671AC8D4D0000CD1C6 /* Presupuesto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Presupuesto.h; sourceTree = "<group>"; };
+		B998BE681AC8D4D0000CD1C6 /* Presupuesto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Presupuesto.m; sourceTree = "<group>"; };
+		B998BE6E1AC8E331000CD1C6 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		B998BE6F1AC8E331000CD1C6 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		B998BE721AC8E488000CD1C6 /* Principal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Principal.h; sourceTree = "<group>"; };
+		B998BE731AC8E488000CD1C6 /* Principal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Principal.m; sourceTree = "<group>"; };
 		B99F17DC1AC8C21500AD0B2A /* SmartBuyer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartBuyer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B99F17E01AC8C21500AD0B2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B99F17E11AC8C21500AD0B2A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -60,6 +73,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B998BE661AC8CC63000CD1C6 /* FBSDKLoginKit.framework in Frameworks */,
+				B998BE651AC8CC63000CD1C6 /* FBSDKCoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +88,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B998BE621AC8CC39000CD1C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B998BE631AC8CC63000CD1C6 /* FBSDKCoreKit.framework */,
+				B998BE641AC8CC63000CD1C6 /* FBSDKLoginKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B998BE6A1AC8E2C5000CD1C6 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				B998BE6E1AC8E331000CD1C6 /* MenuViewController.h */,
+				B998BE6F1AC8E331000CD1C6 /* MenuViewController.m */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		B998BE711AC8E44A000CD1C6 /* Principal */ = {
+			isa = PBXGroup;
+			children = (
+				B998BE721AC8E488000CD1C6 /* Principal.h */,
+				B998BE731AC8E488000CD1C6 /* Principal.m */,
+			);
+			name = Principal;
+			sourceTree = "<group>";
+		};
 		B99F17D31AC8C21500AD0B2A = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +136,9 @@
 		B99F17DE1AC8C21500AD0B2A /* SmartBuyer */ = {
 			isa = PBXGroup;
 			children = (
+				B998BE711AC8E44A000CD1C6 /* Principal */,
+				B998BE6A1AC8E2C5000CD1C6 /* Menu */,
+				B998BE621AC8CC39000CD1C6 /* Frameworks */,
 				B99F18091AC8C45F00AD0B2A /* Media */,
 				B99F18051AC8C3B600AD0B2A /* SWRevealViewController */,
 				B99F17E31AC8C21500AD0B2A /* AppDelegate.h */,
@@ -104,6 +149,8 @@
 				B99F17EC1AC8C21500AD0B2A /* Images.xcassets */,
 				B99F17EE1AC8C21500AD0B2A /* LaunchScreen.xib */,
 				B99F17DF1AC8C21500AD0B2A /* Supporting Files */,
+				B998BE671AC8D4D0000CD1C6 /* Presupuesto.h */,
+				B998BE681AC8D4D0000CD1C6 /* Presupuesto.m */,
 			);
 			path = SmartBuyer;
 			sourceTree = "<group>";
@@ -260,8 +307,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B998BE691AC8D4D0000CD1C6 /* Presupuesto.m in Sources */,
+				B998BE701AC8E331000CD1C6 /* MenuViewController.m in Sources */,
 				B99F17E81AC8C21500AD0B2A /* Login.m in Sources */,
 				B99F17E51AC8C21500AD0B2A /* AppDelegate.m in Sources */,
+				B998BE741AC8E488000CD1C6 /* Principal.m in Sources */,
 				B99F17E21AC8C21500AD0B2A /* main.m in Sources */,
 				B99F18081AC8C3B700AD0B2A /* SWRevealViewController.m in Sources */,
 			);
@@ -385,6 +435,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SmartBuyer",
+				);
 				INFOPLIST_FILE = SmartBuyer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -395,6 +449,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SmartBuyer",
+				);
 				INFOPLIST_FILE = SmartBuyer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -454,6 +512,7 @@
 				B99F18011AC8C21500AD0B2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B99F18021AC8C21500AD0B2A /* Build configuration list for PBXNativeTarget "SmartBuyerTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +521,7 @@
 				B99F18041AC8C21500AD0B2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
