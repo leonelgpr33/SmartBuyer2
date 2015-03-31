@@ -1,26 +1,33 @@
 //
-//  MenuViewController.m
+//  Pendientes.m
 //  SmartBuyer
 //
-//  Created by LI Leonel G. Pérez Ramos on 29/03/15.
+//  Created by LI Leonel G. Pérez Ramos on 30/03/15.
 //  Copyright (c) 2015 LI Leonel G. Pérez Ramos. All rights reserved.
 //
 
-#import "MenuViewController.h"
+#import "Pendientes.h"
 #import "SWRevealViewController.h"
 
-@interface MenuViewController ()
+@interface Pendientes ()
 
 @end
 
-@implementation MenuViewController {
-    NSArray *menuItems;
-}
-
+@implementation Pendientes
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    menuItems = @[@"smartbuyer",@"loggin",@"presupuesto",@"registrar",@"lugares",@"pendientes",@"comportamiento"];
+    self.title=@"Gastos Pendientes";
+    
+    // Do any additional setup after loading the view.
+    SWRevealViewController *revealViewController = self.revealViewController;
+    if ( revealViewController )
+    {
+        [self.menuButton setTarget: self.revealViewController];
+        [self.menuButton setAction: @selector( revealToggle: )];
+        [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+    }
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -38,23 +45,24 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 1;
+    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return [menuItems count];
+    return 0;
 }
 
+/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
-    NSString *cellIdentifier = [menuItems objectAtIndex:indexPath.row];
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
+    // Configure the cell...
     
-    
-    return cell;}
-
+    return cell;
+}
+*/
 
 /*
 // Override to support conditional editing of the table view.

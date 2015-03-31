@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  Principal.h
 //  SmartBuyer
 //
 //  Created by LI Leonel G. Pérez Ramos on 29/03/15.
@@ -7,13 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <FBSDKCoreKit/FBSDKCoreKit.h>
-#import <FBSDKLoginKit/FBSDKLoginKit.h>
 
-@interface Login : UIViewController
-@property (weak, nonatomic) IBOutlet FBSDKLoginButton *loginButton;
+@interface Comportamiento : UIViewController
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *menuButton;
 
-
 @end
-

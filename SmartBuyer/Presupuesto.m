@@ -7,6 +7,7 @@
 //
 
 #import "Presupuesto.h"
+#import "SWRevealViewController.h"
 
 @interface Presupuesto ()
 
@@ -15,7 +16,17 @@
 @implementation Presupuesto
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
+    self.title=@"Presupuesto";
+    SWRevealViewController *revealViewController = self.revealViewController;
+    if ( revealViewController )
+    {
+        [self.menuButton setTarget: self.revealViewController];
+        [self.menuButton setAction: @selector( revealToggle: )];
+        [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+    }
+
     // Do any additional setup after loading the view.
 }
 

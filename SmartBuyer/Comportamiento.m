@@ -1,25 +1,25 @@
 //
-//  ViewController.m
+//  Principal.m
 //  SmartBuyer
 //
 //  Created by LI Leonel G. Pérez Ramos on 29/03/15.
 //  Copyright (c) 2015 LI Leonel G. Pérez Ramos. All rights reserved.
 //
 
-#import "Login.h"
+#import "Comportamiento.h"
 #import "SWRevealViewController.h"
-#import <FBSDKCoreKit/FBSDKCoreKit.h>
-#import <FBSDKLoginKit/FBSDKLoginKit.h>
 
-@interface Login ()
+@interface Comportamiento ()
 
 @end
 
-@implementation Login
+@implementation Comportamiento
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title=@"Loggin";
+    self.title=@"Comportamiento Financiero";
+
+    // Do any additional setup after loading the view.
     SWRevealViewController *revealViewController = self.revealViewController;
     if ( revealViewController )
     {
@@ -27,20 +27,21 @@
         [self.menuButton setAction: @selector( revealToggle: )];
         [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     }
-
-    // Do any additional setup after loading the view, typically from a nib.
-    if ([FBSDKAccessToken currentAccessToken]) {
-        // User is logged in, do work such as go to next view controller.
-        
-        NSLog(@"te loggeaste cabrón");
-        [self performSegueWithIdentifier:@"GoToPresupuesto" sender:self];
-        
-    }
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
 
 @end
