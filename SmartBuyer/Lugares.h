@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Lugares : UIViewController
+@interface Lugares : UITableViewController
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *menuButton;
 
 @end
