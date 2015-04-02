@@ -45,4 +45,9 @@
 }
 */
 
+- (IBAction)btnGuardar:(id)sender {
+}
+
+- (IBAction)btnCancelar:(id)sender {
+}
 @end

@@ -83,10 +83,10 @@
         <scene sceneID="8FI-ao-pra">
             <objects>
                 <tableViewController id="Lcw-1D-rwP" customClass="MenuViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="UWZ-zr-LmP">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="UWZ-zr-LmP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.78653701534242426" green="0.486933611525035" blue="0.37849330239438483" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="smartbuyer" id="FPt-Qd-uVh" userLabel="smartbuyer">
                                 <autoresizingMask key="autoresizingMask"/>
@@ -114,14 +114,14 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loggin.png" id="08D-Yd-Djr">
-                                            <rect key="frame" x="7" y="2" width="40" height="40"/>
+                                            <rect key="frame" x="7" y="4" width="35" height="35"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loggin" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nzZ-Br-1rI">
                                             <rect key="frame" x="55" y="11" width="250" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -140,11 +140,11 @@
                                             <rect key="frame" x="55" y="11" width="250" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="budget.png" id="EP2-JM-JTa">
-                                            <rect key="frame" x="7" y="2" width="40" height="40"/>
+                                            <rect key="frame" x="7" y="4" width="35" height="35"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                     </subviews>
@@ -163,11 +163,11 @@
                                             <rect key="frame" x="55" y="11" width="250" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spends.png" id="38d-BK-vMc">
-                                            <rect key="frame" x="7" y="2" width="40" height="40"/>
+                                            <rect key="frame" x="7" y="4" width="35" height="35"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                     </subviews>
@@ -186,11 +186,11 @@
                                             <rect key="frame" x="55" y="11" width="250" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="places.png" id="zri-mC-4uA">
-                                            <rect key="frame" x="7" y="2" width="40" height="40"/>
+                                            <rect key="frame" x="7" y="4" width="35" height="35"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                     </subviews>
@@ -209,11 +209,11 @@
                                             <rect key="frame" x="55" y="11" width="250" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pendientes.png" id="nU5-zN-iTa">
-                                            <rect key="frame" x="7" y="2" width="40" height="40"/>
+                                            <rect key="frame" x="7" y="4" width="35" height="35"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                     </subviews>
@@ -232,11 +232,11 @@
                                             <rect key="frame" x="55" y="11" width="250" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="behavior.png" id="FDg-Yu-g1j">
-                                            <rect key="frame" x="7" y="2" width="40" height="40"/>
+                                            <rect key="frame" x="7" y="4" width="35" height="35"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                     </subviews>
@@ -376,6 +376,9 @@
                                 <state key="normal" title="Guardar">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnGuardar:" destination="fP9-76-TCZ" eventType="touchUpInside" id="6p0-FY-E7u"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dNR-ZP-XaU">
                                 <rect key="frame" x="170" y="486" width="120" height="46"/>
@@ -386,6 +389,9 @@
                                 <state key="normal" title="Cancelar">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnCancelar:" destination="fP9-76-TCZ" eventType="touchUpInside" id="Uqe-9R-jWi"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$0.00" textAlignment="right" minimumFontSize="17" id="gl5-66-mUr">
                                 <rect key="frame" x="207" y="83" width="97" height="30"/>
@@ -442,6 +448,12 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$0.00" textAlignment="right" minimumFontSize="17" id="d7Q-GF-GO8">
+                                <rect key="frame" x="207" y="186" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -452,6 +464,13 @@
                     </navigationItem>
                     <connections>
                         <outlet property="menuButton" destination="tot-0F-0mj" id="Fko-7r-fwU"/>
+                        <outlet property="txtAlimentacion" destination="iYE-b9-jJf" id="iUE-Wm-25j"/>
+                        <outlet property="txtConsumos" destination="FEU-0e-ZP7" id="oP7-QV-af0"/>
+                        <outlet property="txtEgresos" destination="Auz-Ab-7Si" id="uNY-wV-zTc"/>
+                        <outlet property="txtIngresos" destination="ySb-bO-D9n" id="3HH-EU-TjM"/>
+                        <outlet property="txtRentas" destination="d7Q-GF-GO8" id="fTx-Ja-LPD"/>
+                        <outlet property="txtSeguros" destination="jay-9X-roE" id="Af8-2x-hqP"/>
+                        <outlet property="txtTarjetas" destination="IqG-gv-rrX" id="p4f-nt-90N"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ngv-2l-Udd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -583,6 +602,9 @@
                                 <state key="normal" title="Guardar">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnGuardar:" destination="enH-TY-IHT" eventType="touchUpInside" id="0v2-3R-2Fy"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Yfg-V0-rFw">
                                 <rect key="frame" x="170" y="486" width="120" height="46"/>
@@ -593,6 +615,9 @@
                                 <state key="normal" title="Cancelar">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnCancelar:" destination="enH-TY-IHT" eventType="touchUpInside" id="BVQ-mJ-42h"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monto Restante" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YZY-wZ-xgI">
                                 <rect key="frame" x="16" y="116" width="149" height="21"/>
@@ -610,7 +635,13 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="lblMonto" destination="Z9m-0I-BtF" id="ktj-91-AWD"/>
                         <outlet property="menuButton" destination="KWl-aa-yed" id="0O4-M0-dDg"/>
+                        <outlet property="txtCategoria" destination="t7I-nX-KWj" id="PFQ-I1-GZM"/>
+                        <outlet property="txtFecha" destination="obS-ct-EPw" id="ZyS-A2-Dg3"/>
+                        <outlet property="txtImporte" destination="dJv-fQ-RZB" id="ThY-dw-B4L"/>
+                        <outlet property="txtLugar" destination="shy-Z1-4Ii" id="zmn-uw-DmU"/>
+                        <outlet property="txtTipo" destination="qyb-qS-W29" id="6ZT-BR-Mea"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WFb-2N-D5U" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -688,6 +719,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="btnVerHistorial:" destination="L0y-L5-Vrw" eventType="touchUpInside" id="M0E-dz-gwx"/>
                                     <segue destination="WdN-8T-HjG" kind="modal" identifier="" id="6Cd-lf-ya6"/>
                                 </connections>
                             </button>
@@ -719,6 +751,12 @@
                     </navigationItem>
                     <connections>
                         <outlet property="menuButton" destination="A3d-a3-BXl" id="bam-ci-G8b"/>
+                        <outlet property="txtHora" destination="O2e-Lu-HFe" id="4sc-p3-qWa"/>
+                        <outlet property="txtMes" destination="GSX-ET-J6S" id="uCe-kZ-xPP"/>
+                        <outlet property="txtMontoHora" destination="30b-ww-85m" id="Wx8-jI-ZPt"/>
+                        <outlet property="txtMontoMes" destination="QEd-42-oHN" id="ZeS-Ih-Bc6"/>
+                        <outlet property="txtMontoSemana" destination="YuN-bg-KwI" id="t4h-bL-D3J"/>
+                        <outlet property="txtSemana" destination="NCk-b8-X8l" id="JFP-bA-ERV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7q0-x6-kGA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -818,10 +856,20 @@
                                 <state key="normal" title="Regresar">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnRegresar:" destination="Z7L-Us-RcR" eventType="touchUpInside" id="Ole-96-YME"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="txtCategoria" destination="O6V-Vi-CGA" id="lNj-EL-gaH"/>
+                        <outlet property="txtFecha" destination="S8x-Kh-b9z" id="FGv-NT-MPS"/>
+                        <outlet property="txtImporte" destination="Pua-JS-4lr" id="yoA-dY-UO0"/>
+                        <outlet property="txtLugar" destination="zAB-dR-epT" id="np2-Ic-028"/>
+                        <outlet property="txtTipo" destination="Rfp-GT-vDp" id="HbZ-9N-5tr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gPk-ge-RKV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -852,7 +900,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="d9a-jT-Qco">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="d9a-jT-Qco" customClass="celdaMaster">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="d9a-jT-Qco" id="D4O-oU-tSu">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -887,6 +935,12 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="lblFecha" destination="Emw-b6-HXd" id="svK-m8-gwt"/>
+                                    <outlet property="lblLugar" destination="bjG-wu-pvy" id="H4j-hi-DNc"/>
+                                    <outlet property="lblMonto" destination="Ob6-5X-NcF" id="IhC-6a-bER"/>
+                                    <outlet property="lblTipo" destination="d4t-CR-TRq" id="cFO-qf-9Yk"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -898,7 +952,7 @@
                         <barButtonItem key="leftBarButtonItem" image="close.png" id="QrR-xV-Yqt">
                             <color key="tintColor" red="0.45098039220000002" green="0.66274509800000003" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="L0y-L5-Vrw" kind="push" id="WCF-ep-5mH"/>
+                                <action selector="btnCancelar:" destination="sKW-LU-1o0" id="hDR-11-XYb"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -932,42 +986,46 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="Z3c-xr-McX">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="Z3c-xr-McX" customClass="celdaMaster">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Z3c-xr-McX" id="pyk-O3-Jar">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Renta" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="f4V-dd-TEn">
-                                            <rect key="frame" x="8" y="8" width="47" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Renta" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TKp-aV-qfF">
+                                            <rect key="frame" x="16" y="0.0" width="144" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15/03/2015" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lw1-ci-ULN">
-                                            <rect key="frame" x="8" y="22" width="73" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 abril 2015" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FM8-BN-a5W">
+                                            <rect key="frame" x="16" y="22" width="90" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ChA-JW-kZO">
-                                            <rect key="frame" x="238" y="17" width="74" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taqueria" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dTr-bs-Hxg">
+                                            <rect key="frame" x="114" y="22" width="76" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bancomer Reforma" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Azk-XG-Svw">
-                                            <rect key="frame" x="104" y="22" width="112" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$89.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dAs-ax-T7v">
+                                            <rect key="frame" x="213" y="22" width="44" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="lblFecha" destination="FM8-BN-a5W" id="b34-Qh-wrq"/>
+                                    <outlet property="lblLugar" destination="dTr-bs-Hxg" id="pEN-mc-DLP"/>
+                                    <outlet property="lblMonto" destination="dAs-ax-T7v" id="9gr-jg-M4v"/>
+                                    <outlet property="lblTipo" destination="TKp-aV-qfF" id="5V0-xv-hd7"/>
                                     <segue destination="MTe-B9-Fdf" kind="push" identifier="ShowEditarGasto" id="6rt-nu-bJN"/>
                                 </connections>
                             </tableViewCell>
@@ -1083,6 +1141,9 @@
                                 <state key="normal" title="Guardar">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnGuardar:" destination="MTe-B9-Fdf" eventType="touchUpInside" id="z7A-eR-2FE"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1095,6 +1156,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="txtCategoría" destination="luG-tv-VC4" id="Wjb-lY-5sn"/>
+                        <outlet property="txtFecha" destination="tAb-hi-IIF" id="2Q6-1q-YY8"/>
+                        <outlet property="txtImporte" destination="kdN-uq-NWr" id="kei-Xo-lrl"/>
+                        <outlet property="txtLugar" destination="ThT-hS-2fC" id="RBM-ux-fr3"/>
+                        <outlet property="txtTipo" destination="OMX-8D-pf0" id="wN2-e6-unf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fwm-Nr-pdu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1130,18 +1198,18 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="c2V-3R-a9d" id="xdJ-OY-IVI">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Supermercado" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eOs-p2-Kpq">
-                                            <rect key="frame" x="8" y="20" width="114" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soriana Reforma" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YLH-bL-zw3">
-                                            <rect key="frame" x="8" y="0.0" width="129" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soriana" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eiy-Vn-I0M">
+                                            <rect key="frame" x="15" y="0.0" width="289" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Super Mercado" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZCo-Bc-8es">
+                                            <rect key="frame" x="15" y="20" width="289" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.71764705880000002" green="0.74901960779999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -1246,6 +1314,9 @@
                                 <state key="normal" title="Guardar">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnGuardar:" destination="ekn-0g-yKW" eventType="touchUpInside" id="DGE-Uh-isc"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1258,6 +1329,12 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="txtDomicilio" destination="rDu-Ep-eOX" id="GFn-CO-v1Q"/>
+                        <outlet property="txtNombre" destination="XHH-7H-hfx" id="Zxg-gy-Y6x"/>
+                        <outlet property="txtObservaciones" destination="PnW-en-CDY" id="XZl-vA-uS0"/>
+                        <outlet property="txtTipo" destination="5n6-jY-pDz" id="tZm-Ko-VLs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DB1-R4-H0Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1303,7 +1380,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="vv3-Na-r3k"/>
         <segue reference="Zbk-ug-ekR"/>
-        <segue reference="WCF-ep-5mH"/>
         <segue reference="tBE-hU-cML"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -48,4 +48,6 @@
 }
 */
 
+- (IBAction)btnVerHistorial:(id)sender {
+}
 @end

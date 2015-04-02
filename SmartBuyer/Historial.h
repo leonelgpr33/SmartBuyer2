@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
 @interface Historial : UITableViewController
+
+//Labels
+
+- (IBAction)btnCancelar:(id)sender;
 
 @end

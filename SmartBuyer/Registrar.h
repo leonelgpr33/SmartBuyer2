@@ -7,8 +7,23 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
 @interface Registrar : UIViewController
+
+//Buttons
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *menuButton;
+- (IBAction)btnGuardar:(id)sender;
+- (IBAction)btnCancelar:(id)sender;
+
+//Labels
+@property (strong, nonatomic) IBOutlet UILabel *lblMonto;
+
+//TextFields
+@property (strong, nonatomic) IBOutlet UITextField *txtTipo;
+@property (strong, nonatomic) IBOutlet UITextField *txtCategoria;
+@property (strong, nonatomic) IBOutlet UITextField *txtImporte;
+@property (strong, nonatomic) IBOutlet UITextField *txtFecha;
+@property (strong, nonatomic) IBOutlet UITextField *txtLugar;
 
 @end

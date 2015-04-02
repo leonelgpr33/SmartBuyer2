@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
 @interface RegistraLugar : UIViewController
+
+//Buttons
+- (IBAction)btnGuardar:(id)sender;
+
+//txtFields
+@property (strong, nonatomic) IBOutlet UITextField *txtNombre;
+@property (strong, nonatomic) IBOutlet UITextField *txtTipo;
+@property (strong, nonatomic) IBOutlet UITextField *txtDomicilio;
+@property (strong, nonatomic) IBOutlet UITextView *txtObservaciones;
 
 @end

@@ -7,7 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
 @interface EditarGasto : UIViewController
+
+//Buttons
+- (IBAction)btnGuardar:(id)sender;
+
+//TextFields
+@property (strong, nonatomic) IBOutlet UITextField *txtTipo;
+@property (strong, nonatomic) IBOutlet UITextField *txtCategoría;
+@property (strong, nonatomic) IBOutlet UITextField *txtImporte;
+@property (strong, nonatomic) IBOutlet UITextField *txtFecha;
+@property (strong, nonatomic) IBOutlet UITextField *txtLugar;
 
 @end

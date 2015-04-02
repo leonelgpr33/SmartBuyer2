@@ -7,7 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
 @interface DetalleGasto : UIViewController
+
+//Buttons
+- (IBAction)btnRegresar:(id)sender;
+
+//TextFields
+@property (strong, nonatomic) IBOutlet UITextField *txtTipo;
+@property (strong, nonatomic) IBOutlet UITextField *txtCategoria;
+@property (strong, nonatomic) IBOutlet UITextField *txtImporte;
+@property (strong, nonatomic) IBOutlet UITextField *txtFecha;
+@property (strong, nonatomic) IBOutlet UITextField *txtLugar;
 
 @end

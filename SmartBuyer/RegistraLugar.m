@@ -36,4 +36,6 @@
 }
 */
 
+- (IBAction)btnGuardar:(id)sender {
+}
 @end

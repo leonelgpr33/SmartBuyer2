@@ -99,4 +99,9 @@
 }
 */
 
+- (IBAction)btnCancelar:(id)sender {
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+}
 @end
