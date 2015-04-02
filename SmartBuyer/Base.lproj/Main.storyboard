@@ -687,6 +687,9 @@
                                 <state key="normal" title="Ver Historial de Gastos">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="WdN-8T-HjG" kind="modal" identifier="" id="6Cd-lf-ya6"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="$0.00" textAlignment="right" minimumFontSize="17" id="QEd-42-oHN">
                                 <rect key="frame" x="223" y="359" width="75" height="30"/>
@@ -720,7 +723,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7q0-x6-kGA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1035" y="1101"/>
+            <point key="canvasLocation" x="1085" y="1101"/>
         </scene>
         <!--Detalle Gasto-->
         <scene sceneID="hjN-FE-cmW">
@@ -822,7 +825,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gPk-ge-RKV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1455" y="745"/>
+            <point key="canvasLocation" x="1593" y="745"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zd1-9i-wOt">
+            <objects>
+                <navigationController id="WdN-8T-HjG" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mbh-WI-oWV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="sKW-LU-1o0" kind="relationship" relationship="rootViewController" id="ewy-f3-8k7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EFa-0j-sRr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1526" y="1819"/>
         </scene>
         <!--Historial-->
         <scene sceneID="PNF-eQ-6HS">
@@ -875,10 +894,18 @@
                             <outlet property="delegate" destination="sKW-LU-1o0" id="hyX-94-1Ei"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="ODv-GV-BgB">
+                        <barButtonItem key="leftBarButtonItem" image="close.png" id="QrR-xV-Yqt">
+                            <color key="tintColor" red="0.45098039220000002" green="0.66274509800000003" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="L0y-L5-Vrw" kind="push" id="WCF-ep-5mH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B9g-hK-lEF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1455" y="1403"/>
+            <point key="canvasLocation" x="1975" y="1417"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zPx-5l-VKA">
@@ -1275,5 +1302,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="vv3-Na-r3k"/>
         <segue reference="Zbk-ug-ekR"/>
+        <segue reference="WCF-ep-5mH"/>
     </inferredMetricsTieBreakers>
 </document>
