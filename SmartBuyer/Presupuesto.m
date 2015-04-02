@@ -81,7 +81,7 @@
         self.txtOtros.text = NULL;
         NSLog(@"Guardado correctamente");
     }else{
-        NSLog(@"Corre en circulos algo salio mal :(");
+        NSLog(@"Error al guardar los datos");
     }
 }
 
