@@ -93,8 +93,8 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FPt-Qd-uVh" id="r8b-y2-ARw">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greencoin.png" id="sro-kz-lJE">
-                                            <rect key="frame" x="7" y="2" width="40" height="40"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appicon.png" id="sro-kz-lJE">
+                                            <rect key="frame" x="7" y="0.0" width="40" height="40"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$martBuyer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yer-PI-fak">
@@ -300,6 +300,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="v6L-C6-e5O">
+                                <rect key="frame" x="0.0" y="42" width="320" height="516"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </scrollView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greenbackground.jpg" id="ySb-bO-D9n">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -454,7 +458,8 @@
                         <outlet property="txtAlimentacion" destination="iYE-b9-jJf" id="iUE-Wm-25j"/>
                         <outlet property="txtConsumos" destination="FEU-0e-ZP7" id="oP7-QV-af0"/>
                         <outlet property="txtEgresos" destination="Auz-Ab-7Si" id="uNY-wV-zTc"/>
-                        <outlet property="txtIngresos" destination="ySb-bO-D9n" id="3HH-EU-TjM"/>
+                        <outlet property="txtIngresos" destination="gl5-66-mUr" id="80Q-YK-Efq"/>
+                        <outlet property="txtOtros" destination="Rlm-Yy-t58" id="IgH-Md-sU6"/>
                         <outlet property="txtRentas" destination="d7Q-GF-GO8" id="fTx-Ja-LPD"/>
                         <outlet property="txtSeguros" destination="jay-9X-roE" id="Af8-2x-hqP"/>
                         <outlet property="txtTarjetas" destination="IqG-gv-rrX" id="p4f-nt-90N"/>
@@ -606,12 +611,6 @@
                     <navigationItem key="navigationItem" id="2pf-a8-5Qy">
                         <barButtonItem key="leftBarButtonItem" image="menuicon.png" id="KWl-aa-yed">
                             <color key="tintColor" red="0.51764705879999995" green="0.70980392160000005" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="close.png" id="dj9-fq-DS3" userLabel="btnClose">
-                            <color key="tintColor" red="0.45098039220000002" green="0.66274509800000003" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <action selector="btnClose:" destination="enH-TY-IHT" id="GVy-Py-o4V"/>
-                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -1339,12 +1338,12 @@
     </scenes>
     <resources>
         <image name="add.png" width="32" height="32"/>
+        <image name="appicon.png" width="64" height="64"/>
         <image name="behavior.png" width="65" height="68"/>
         <image name="budget.png" width="90" height="68"/>
         <image name="close.png" width="32" height="32"/>
         <image name="coin.png" width="429" height="472"/>
         <image name="greenbackground.jpg" width="164" height="307"/>
-        <image name="greencoin.png" width="90" height="68"/>
         <image name="loggin.png" width="51" height="68"/>
         <image name="menuicon.png" width="32" height="32"/>
         <image name="pendientes.png" width="102" height="44"/>
