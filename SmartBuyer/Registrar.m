@@ -48,6 +48,8 @@
 - (IBAction)btnGuardar:(id)sender {
 }
 
-- (IBAction)btnCancelar:(id)sender {
+- (IBAction)btnClose:(id)sender {
+        [self dismissViewControllerAnimated:YES completion:nil];
 }
+
 @end

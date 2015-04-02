@@ -13,6 +13,7 @@
 
 //Buttons
 - (IBAction)btnGuardar:(id)sender;
+- (IBAction)btnClose:(id)sender;
 
 //txtFields
 @property (strong, nonatomic) IBOutlet UITextField *txtNombre;

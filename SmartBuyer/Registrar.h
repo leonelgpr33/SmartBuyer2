@@ -14,7 +14,7 @@
 //Buttons
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *menuButton;
 - (IBAction)btnGuardar:(id)sender;
-- (IBAction)btnCancelar:(id)sender;
+- (IBAction)btnClose:(id)sender;
 
 //Labels
 @property (strong, nonatomic) IBOutlet UILabel *lblMonto;
