@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
 @interface Comportamiento : UIViewController
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *menuButton;

@@ -932,7 +932,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Z3c-xr-McX">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="Z3c-xr-McX">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Z3c-xr-McX" id="pyk-O3-Jar">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -967,6 +967,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="MTe-B9-Fdf" kind="push" identifier="ShowEditarGasto" id="6rt-nu-bJN"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -1095,23 +1098,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fwm-Nr-pdu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="696" y="2543"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="X2g-VR-d8c">
-            <objects>
-                <navigationController id="NwK-3b-fhI" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XQ6-sl-lsg">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="MTe-B9-Fdf" kind="relationship" relationship="rootViewController" id="50Y-ED-AIV"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vpb-HT-JaW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="696" y="1809"/>
+            <point key="canvasLocation" x="757" y="1809"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="c7u-M4-7Jb">
@@ -1290,7 +1277,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rlb-PL-omU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="256" y="2419"/>
+            <point key="canvasLocation" x="244" y="2497"/>
         </scene>
     </scenes>
     <resources>
