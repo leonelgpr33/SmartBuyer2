@@ -7,6 +7,7 @@
 //
 
 #import "RegistraLugar.h"
+#import <Parse/Parse.h>
 
 @interface RegistraLugar ()
 
@@ -37,6 +38,26 @@
 */
 
 - (IBAction)btnGuardar:(id)sender {
+    //Metodo disparado por el boton de guardar
+    PFObject *testObject = [PFObject objectWithClassName:@"registralugar"];
+    
+    testObject[@"nombre"] = self.txtNombre.text;
+    testObject[@"tipo"] = self.txtTipo.text;
+    testObject[@"domicilio"] = self.txtDomicilio.text;
+    testObject[@"observaciones"] = self.txtObservaciones.text;
+    
+    
+    if([testObject saveInBackground]){
+        self.txtNombre.text = NULL;
+        self.txtTipo.text = NULL;
+        self.txtDomicilio.text = NULL;
+        self.txtObservaciones.text = NULL;
+        
+        NSLog(@"Guardado correctamente");
+    }else{
+        NSLog(@"Error al guardar los datos");
+    }
+
 }
 
 - (IBAction)btnClose:(id)sender {
