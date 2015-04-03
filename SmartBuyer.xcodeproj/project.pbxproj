@@ -64,6 +64,8 @@
 		B9D8AFCD1ACA60B3005AEF76 /* Lugares.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D8AFCC1ACA60B3005AEF76 /* Lugares.m */; };
 		B9D9981A1ACDAE9B00C9FB38 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B9D998191ACDAE9B00C9FB38 /* logo.png */; };
 		B9D9981C1ACDB1AE00C9FB38 /* appicon.png in Resources */ = {isa = PBXBuildFile; fileRef = B9D9981B1ACDB1AE00C9FB38 /* appicon.png */; };
+		B9D9981F1ACDFF8C00C9FB38 /* celdaLugar.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D9981E1ACDFF8C00C9FB38 /* celdaLugar.m */; };
+		B9D998221ACE15E900C9FB38 /* pendienteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D998211ACE15E900C9FB38 /* pendienteCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -152,6 +154,10 @@
 		B9D8AFCC1ACA60B3005AEF76 /* Lugares.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lugares.m; sourceTree = "<group>"; };
 		B9D998191ACDAE9B00C9FB38 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		B9D9981B1ACDB1AE00C9FB38 /* appicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appicon.png; sourceTree = "<group>"; };
+		B9D9981D1ACDFF8C00C9FB38 /* celdaLugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = celdaLugar.h; sourceTree = "<group>"; };
+		B9D9981E1ACDFF8C00C9FB38 /* celdaLugar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = celdaLugar.m; sourceTree = "<group>"; };
+		B9D998201ACE15E900C9FB38 /* pendienteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pendienteCell.h; sourceTree = "<group>"; };
+		B9D998211ACE15E900C9FB38 /* pendienteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pendienteCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -410,6 +416,8 @@
 			children = (
 				B9D8AFC01ACA3F7E005AEF76 /* Pendientes.h */,
 				B9D8AFC11ACA3F7E005AEF76 /* Pendientes.m */,
+				B9D998201ACE15E900C9FB38 /* pendienteCell.h */,
+				B9D998211ACE15E900C9FB38 /* pendienteCell.m */,
 			);
 			name = Pendientes;
 			sourceTree = "<group>";
@@ -419,6 +427,8 @@
 			children = (
 				B9D8AFCB1ACA60B3005AEF76 /* Lugares.h */,
 				B9D8AFCC1ACA60B3005AEF76 /* Lugares.m */,
+				B9D9981D1ACDFF8C00C9FB38 /* celdaLugar.h */,
+				B9D9981E1ACDFF8C00C9FB38 /* celdaLugar.m */,
 			);
 			name = Lugares;
 			sourceTree = "<group>";
@@ -562,6 +572,8 @@
 				B922C7331ACD0FB4009B1962 /* celdaMaster.m in Sources */,
 				B905E51E1ACBAD140067240E /* DetalleGasto.m in Sources */,
 				B998BE741AC8E488000CD1C6 /* Comportamiento.m in Sources */,
+				B9D998221ACE15E900C9FB38 /* pendienteCell.m in Sources */,
+				B9D9981F1ACDFF8C00C9FB38 /* celdaLugar.m in Sources */,
 				B99F17E21AC8C21500AD0B2A /* main.m in Sources */,
 				B905E5101ACB873C0067240E /* Historial.m in Sources */,
 				B9D8AFC21ACA3F7E005AEF76 /* Pendientes.m in Sources */,

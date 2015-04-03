@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
+#import <ParseUI/PFQueryTableViewController.h>
 
-@interface Lugares : UITableViewController
+@interface Lugares : PFQueryTableViewController
 
 //Buttons
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *menuButton;

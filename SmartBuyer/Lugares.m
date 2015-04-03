@@ -8,12 +8,32 @@
 
 #import "Lugares.h"
 #import "SWRevealViewController.h"
+#import "celdaLugar.h"
 
 @interface Lugares ()
 
 @end
 
 @implementation Lugares
+
+- (id)initWithCoder:(NSCoder *)aCoder
+{
+    self = [super initWithCoder:aCoder];
+    if (self) {
+        // Custom the table
+        // The className to query on
+        self.parseClassName = @"registralugar";
+        // The key of the PFObject to display in the label of the default cell style
+        self.textKey = @"nombre";
+        // Whether the built-in pull-to-refresh is enabled
+        self.pullToRefreshEnabled = YES;
+        // Whether the built-in pagination is enabled
+        self.paginationEnabled = YES;
+        // The number of objects to show per page
+        self.objectsPerPage = 8;
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -35,23 +55,35 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
+- (void)viewDidUnload
+{
+    [super viewDidUnload];
+}
+- (PFQuery *)queryForTable
+{
+    PFQuery *query = [PFQuery queryWithClassName:@"registralugar"];
+    [query orderByDescending:@"createdAt"];
+    return query;
+}
+- (void) objectsDidLoad:(NSError *)error
+{
+    [super objectsDidLoad:error];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath object:(PFObject *)object {
+    static NSString *CellIdentifier = @"lugarCelda";
+    celdaLugar *cell = (celdaLugar *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[celdaLugar alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
+    // Configure the cell
+    cell.lblLugar.text = [object objectForKey:@"nombre"];
+    cell.lblTipo.text = [object objectForKey:@"tipo"];
+    return cell;
 }
 
 /*
