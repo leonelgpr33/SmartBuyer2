@@ -57,6 +57,7 @@
     }else{
         NSLog(@"Error al guardar los datos");
     }
+    [self dismissViewControllerAnimated:YES completion:nil];
 
 }
 

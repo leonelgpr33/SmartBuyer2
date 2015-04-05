@@ -9,6 +9,7 @@
 #import "Pendientes.h"
 #import "SWRevealViewController.h"
 #import "pendienteCell.h"
+#import "EditarGasto.h"
 
 
 @interface Pendientes ()
@@ -59,7 +60,7 @@
 - (PFQuery *)queryForTable
 {
     PFQuery *query = [PFQuery queryWithClassName:@"registrar"];
-    [query orderByDescending:@"createdAt"];
+    [query orderByAscending:@"fecha"];
     return query;
 }
 
@@ -84,8 +85,6 @@
         cell = [[pendienteCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
-    NSLog(@"Fecha %@",[object objectForKey:@"fecha"] );
-    
     NSNumber *importe = [object objectForKey:@"importe"];
     NSDate *fecha = [object objectForKey:@"fecha"];
     
@@ -93,6 +92,8 @@
     [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
     
     NSString *fecha_str = [dateFormatter stringFromDate:fecha];
+    
+    NSLog(@"%@", [object objectForKey:@"tipo"]);
     
     // Configure the cell
     cell.lblTipo.text = [object objectForKey:@"tipo"];
@@ -102,6 +103,46 @@
     
     
     return cell;
+}
+
+//Detail segue
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue identifier] isEqualToString:@"ShowEditarGasto"]) {
+        
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        EditarGasto *segundoView = [segue destinationViewController];
+        PFObject *object = [self.objects objectAtIndex:indexPath.row];
+        
+        NSString *tipoRegistrar = [object objectForKey:@"tipo"];
+        NSString *categoriaRegistrar = [object objectForKey:@"categoria"];
+        NSNumber *importeRegistrar = [object objectForKey:@"importe"];
+        NSDate *fechaRegistrar = [object objectForKey:@"fecha"];
+        
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
+        
+        NSString *fecha_str = [dateFormatter stringFromDate:fechaRegistrar];
+        //NSString *lugarRegistrar = [object objectForKey:@"lugar"];
+
+
+        
+        segundoView.tipo = tipoRegistrar;
+        segundoView.categoria = categoriaRegistrar;
+        segundoView.importe = [importeRegistrar stringValue];
+        segundoView.fecha = fecha_str;
+        //segundoView.lugar = lugarRegistrar;
+        
+    }
+}
+    //Deleting row from parse dot com
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    // Remove the row from data model
+    PFObject *object = [self.objects objectAtIndex:indexPath.row];
+    [object deleteInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+       //[self refreshTable:nil];
+    }];
 }
 
 

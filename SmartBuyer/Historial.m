@@ -7,12 +7,33 @@
 //
 
 #import "Historial.h"
+#import "celdaHistorial.h"
 
 @interface Historial ()
 
 @end
 
 @implementation Historial
+
+- (id)initWithCoder:(NSCoder *)aCoder
+{
+    self = [super initWithCoder:aCoder];
+    if (self) {
+        // Custom the table
+        // The className to query on
+        self.parseClassName = @"registrar";
+        // The key of the PFObject to display in the label of the default cell style
+        self.textKey = @"tipo";
+        // Whether the built-in pull-to-refresh is enabled
+        self.pullToRefreshEnabled = YES;
+        // Whether the built-in pagination is enabled
+        self.paginationEnabled = YES;
+        // The number of objects to show per page
+        self.objectsPerPage = 8;
+    }
+    return self;
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -26,12 +47,44 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
+- (void)viewDidUnload
+{
+    [super viewDidUnload];
+}
+- (PFQuery *)queryForTable
+{
+    PFQuery *query = [PFQuery queryWithClassName:@"registrar"];
+    [query orderByDescending:@"createdAt"];
+    return query;
+}
+- (void) objectsDidLoad:(NSError *)error
+{
+    [super objectsDidLoad:error];
+}
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath object:(PFObject *)object {
+    static NSString *CellIdentifier = @"historialCelda";
+    celdaHistorial *cell = (celdaHistorial *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[celdaHistorial alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
+    // Configure the cell
+    cell.lblTipo.text = [object objectForKey:@"tipo"];
+    cell.lblFecha.text = [object objectForKey:@"fecha"];
+    //cell.lblLugar.text = [object objectForKey:@"lugar"];
+    cell.lblImporte.text = [object objectForKey:@"importe"];
+
+    return cell;
+}
+
+/*#pragma mark - Table view data source
+
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 #warning Potentially incomplete method implementation.
@@ -43,7 +96,7 @@
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
     return 0;
-}
+}*/
 
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

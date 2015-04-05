@@ -14,9 +14,28 @@
 
 @implementation EditarGasto
 
+@synthesize lblTipo;
+@synthesize txtCategoria;
+@synthesize txtImporte;
+@synthesize txtFecha;
+@synthesize txtLugar;
+
+@synthesize tipo;
+@synthesize categoria;
+@synthesize fecha;
+@synthesize importe;
+@synthesize lugar;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title=@"Editar Gasto";
+    
+    self.lblTipo.text = tipo;
+    self.txtCategoria.text = categoria;
+    self.txtFecha.text = fecha;
+    self.txtImporte.text = importe;
+    //self.txtLugar.text = lugar;
+
 
     // Do any additional setup after loading the view.
 }

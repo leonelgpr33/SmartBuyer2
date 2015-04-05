@@ -34,7 +34,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coin.png" id="0Mg-ZN-Dpc">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" id="0Mg-ZN-Dpc">
                                 <rect key="frame" x="60" y="81" width="200" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -879,7 +879,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="d9a-jT-Qco" customClass="celdaMaster">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="historialCelda" id="d9a-jT-Qco" customClass="celdaHistorial">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="d9a-jT-Qco" id="D4O-oU-tSu">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -915,10 +915,11 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="lblFecha" destination="Emw-b6-HXd" id="svK-m8-gwt"/>
-                                    <outlet property="lblLugar" destination="bjG-wu-pvy" id="H4j-hi-DNc"/>
+                                    <outlet property="lblFecha" destination="Emw-b6-HXd" id="Rcl-gv-MgN"/>
+                                    <outlet property="lblImporte" destination="Ob6-5X-NcF" id="nFi-1C-bZD"/>
+                                    <outlet property="lblLugar" destination="bjG-wu-pvy" id="7cM-aa-KSI"/>
                                     <outlet property="lblMonto" destination="Ob6-5X-NcF" id="IhC-6a-bER"/>
-                                    <outlet property="lblTipo" destination="d4t-CR-TRq" id="cFO-qf-9Yk"/>
+                                    <outlet property="lblTipo" destination="d4t-CR-TRq" id="TAp-Yr-oDo"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -960,42 +961,41 @@
         <scene sceneID="Aoa-Wc-w9f">
             <objects>
                 <tableViewController id="kDc-wv-vSF" customClass="Pendientes" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="49" sectionHeaderHeight="22" sectionFooterHeight="22" id="AIH-Ff-hwb">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" id="AIH-Ff-hwb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="pendienteCelda" rowHeight="49" id="Z3c-xr-McX" customClass="pendienteCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="pendienteCelda" editingAccessoryType="detailDisclosureButton" rowHeight="60" id="Z3c-xr-McX" customClass="pendienteCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Z3c-xr-McX" id="pyk-O3-Jar">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Renta" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TKp-aV-qfF">
-                                            <rect key="frame" x="16" y="0.0" width="144" height="21"/>
+                                            <rect key="frame" x="13" y="0.0" width="144" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 abril 2015" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FM8-BN-a5W">
-                                            <rect key="frame" x="16" y="22" width="90" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="89" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Eb1-Ev-cQe">
-                                            <rect key="frame" x="258" y="19" width="54" height="21"/>
+                                            <rect key="frame" x="175" y="8" width="58" height="43"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <color key="textColor" red="0.67450980390000004" green="0.70980392160000005" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lugar" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3M2-0N-abB">
-                                            <rect key="frame" x="114" y="22" width="136" height="21"/>
+                                            <rect key="frame" x="13" y="19" width="136" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <color key="textColor" red="0.67450980390000004" green="0.70980392160000005" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 abril 2015" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FM8-BN-a5W">
+                                            <rect key="frame" x="13" y="38" width="90" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -1004,7 +1004,8 @@
                                     <outlet property="lblFecha" destination="FM8-BN-a5W" id="fDk-h1-T1p"/>
                                     <outlet property="lblLugar" destination="3M2-0N-abB" id="dow-FY-gOI"/>
                                     <outlet property="lblMonto" destination="Eb1-Ev-cQe" id="N9S-xd-rGp"/>
-                                    <segue destination="MTe-B9-Fdf" kind="push" identifier="ShowEditarGasto" id="6rt-nu-bJN"/>
+                                    <outlet property="lblTipo" destination="TKp-aV-qfF" id="cuv-e4-cE8"/>
+                                    <segue destination="MTe-B9-Fdf" kind="custom" identifier="ShowEditarGasto" trigger="accessoryAction" id="U6N-2f-70W"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -1038,13 +1039,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="575"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FrK-hD-RUv">
-                                <rect key="frame" x="30" y="152" width="34" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categoría" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nDf-y1-j3d">
                                 <rect key="frame" x="30" y="216" width="75" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1073,12 +1067,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Hogar" textAlignment="center" minimumFontSize="17" id="OMX-8D-pf0">
-                                <rect key="frame" x="158" y="148" width="124" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Alimentación" textAlignment="center" minimumFontSize="17" id="luG-tv-VC4">
                                 <rect key="frame" x="158" y="212" width="124" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1103,13 +1091,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RENTA" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0oc-JI-edM">
-                                <rect key="frame" x="112" y="83" width="97" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IGe-ai-btY">
                                 <rect key="frame" x="100" y="475" width="120" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1123,6 +1104,13 @@
                                     <action selector="btnGuardar:" destination="MTe-B9-Fdf" eventType="touchUpInside" id="z7A-eR-2FE"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RENTA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0oc-JI-edM">
+                                <rect key="frame" x="16" y="133" width="288" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1135,16 +1123,16 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="txtCategoría" destination="luG-tv-VC4" id="Wjb-lY-5sn"/>
-                        <outlet property="txtFecha" destination="tAb-hi-IIF" id="2Q6-1q-YY8"/>
-                        <outlet property="txtImporte" destination="kdN-uq-NWr" id="kei-Xo-lrl"/>
-                        <outlet property="txtLugar" destination="ThT-hS-2fC" id="RBM-ux-fr3"/>
-                        <outlet property="txtTipo" destination="OMX-8D-pf0" id="wN2-e6-unf"/>
+                        <outlet property="lblTipo" destination="0oc-JI-edM" id="f3X-9g-haA"/>
+                        <outlet property="txtCategoria" destination="luG-tv-VC4" id="daM-GR-bCM"/>
+                        <outlet property="txtFecha" destination="tAb-hi-IIF" id="hes-ak-chc"/>
+                        <outlet property="txtImporte" destination="kdN-uq-NWr" id="vHg-0x-3KO"/>
+                        <outlet property="txtLugar" destination="ThT-hS-2fC" id="swh-Fs-jIF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fwm-Nr-pdu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-250" y="3233"/>
+            <point key="canvasLocation" x="-250" y="3322"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="c7u-M4-7Jb">
@@ -1171,7 +1159,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="lugarCelda" id="c2V-3R-a9d" customClass="celdaLugar">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="lugarCelda" editingAccessoryType="detailDisclosureButton" id="c2V-3R-a9d" customClass="celdaLugar">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="c2V-3R-a9d" id="xdJ-OY-IVI">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -1345,9 +1333,9 @@
         <image name="behavior.png" width="65" height="68"/>
         <image name="budget.png" width="90" height="68"/>
         <image name="close.png" width="32" height="32"/>
-        <image name="coin.png" width="429" height="472"/>
         <image name="greenbackground.jpg" width="164" height="307"/>
         <image name="loggin.png" width="51" height="68"/>
+        <image name="logo.png" width="325" height="326"/>
         <image name="menuicon.png" width="32" height="32"/>
         <image name="pendientes.png" width="102" height="44"/>
         <image name="piechart.png" width="640" height="516"/>

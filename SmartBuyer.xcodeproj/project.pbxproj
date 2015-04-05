@@ -40,6 +40,7 @@
 		B922C72D1ACCEA3A009B1962 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B922C72C1ACCEA3A009B1962 /* libz.dylib */; };
 		B922C72F1ACCEA46009B1962 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B922C72E1ACCEA46009B1962 /* libsqlite3.dylib */; };
 		B922C7331ACD0FB4009B1962 /* celdaMaster.m in Sources */ = {isa = PBXBuildFile; fileRef = B922C7321ACD0FB4009B1962 /* celdaMaster.m */; };
+		B98500EC1AD0DEB90043BB90 /* celdaHistorial.m in Sources */ = {isa = PBXBuildFile; fileRef = B98500EB1AD0DEB90043BB90 /* celdaHistorial.m */; };
 		B998BE651AC8CC63000CD1C6 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B998BE631AC8CC63000CD1C6 /* FBSDKCoreKit.framework */; };
 		B998BE661AC8CC63000CD1C6 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B998BE641AC8CC63000CD1C6 /* FBSDKLoginKit.framework */; };
 		B998BE691AC8D4D0000CD1C6 /* Presupuesto.m in Sources */ = {isa = PBXBuildFile; fileRef = B998BE681AC8D4D0000CD1C6 /* Presupuesto.m */; };
@@ -117,6 +118,8 @@
 		B922C72E1ACCEA46009B1962 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		B922C7311ACD0FB4009B1962 /* celdaMaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = celdaMaster.h; sourceTree = "<group>"; };
 		B922C7321ACD0FB4009B1962 /* celdaMaster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = celdaMaster.m; sourceTree = "<group>"; };
+		B98500EA1AD0DEB90043BB90 /* celdaHistorial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = celdaHistorial.h; sourceTree = "<group>"; };
+		B98500EB1AD0DEB90043BB90 /* celdaHistorial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = celdaHistorial.m; sourceTree = "<group>"; };
 		B998BE631AC8CC63000CD1C6 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		B998BE641AC8CC63000CD1C6 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		B998BE671AC8D4D0000CD1C6 /* Presupuesto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Presupuesto.h; sourceTree = "<group>"; };
@@ -202,6 +205,8 @@
 			children = (
 				B905E50E1ACB873C0067240E /* Historial.h */,
 				B905E50F1ACB873C0067240E /* Historial.m */,
+				B98500EA1AD0DEB90043BB90 /* celdaHistorial.h */,
+				B98500EB1AD0DEB90043BB90 /* celdaHistorial.m */,
 			);
 			name = Historial;
 			sourceTree = "<group>";
@@ -570,6 +575,7 @@
 				B905E51A1ACBAB900067240E /* EditarGasto.m in Sources */,
 				B9D8AFCD1ACA60B3005AEF76 /* Lugares.m in Sources */,
 				B922C7331ACD0FB4009B1962 /* celdaMaster.m in Sources */,
+				B98500EC1AD0DEB90043BB90 /* celdaHistorial.m in Sources */,
 				B905E51E1ACBAD140067240E /* DetalleGasto.m in Sources */,
 				B998BE741AC8E488000CD1C6 /* Comportamiento.m in Sources */,
 				B9D998221ACE15E900C9FB38 /* pendienteCell.m in Sources */,

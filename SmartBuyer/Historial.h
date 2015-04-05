@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
+#import <ParseUI/PFQueryTableViewController.h>
 
-@interface Historial : UITableViewController
+
+
+@interface Historial : PFQueryTableViewController
 
 //Labels
 

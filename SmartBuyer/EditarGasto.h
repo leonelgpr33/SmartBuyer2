@@ -14,11 +14,19 @@
 //Buttons
 - (IBAction)btnGuardar:(id)sender;
 
+//Labels
+@property (strong, nonatomic) IBOutlet UILabel *lblTipo;
+
 //TextFields
-@property (strong, nonatomic) IBOutlet UITextField *txtTipo;
-@property (strong, nonatomic) IBOutlet UITextField *txtCategoría;
+@property (strong, nonatomic) IBOutlet UITextField *txtCategoria;
 @property (strong, nonatomic) IBOutlet UITextField *txtImporte;
 @property (strong, nonatomic) IBOutlet UITextField *txtFecha;
 @property (strong, nonatomic) IBOutlet UITextField *txtLugar;
+
+@property (strong, nonatomic) NSString *tipo;
+@property (strong, nonatomic) NSString *categoria;
+@property (strong, nonatomic) NSString *importe;
+@property (strong, nonatomic) NSString *fecha;
+@property (strong, nonatomic) NSString *lugar;
 
 @end
