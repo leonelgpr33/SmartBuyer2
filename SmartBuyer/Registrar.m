@@ -9,6 +9,7 @@
 #import "Registrar.h"
 #import "SWRevealViewController.h"
 #import <Parse/Parse.h>
+#import "VariablesGlobales.h"
 
 
 
@@ -29,6 +30,12 @@
         [self.menuButton setAction: @selector( revealToggle: )];
         [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     }
+    
+    //Concatenar cadena con signo de dollar
+    
+    NSString *cadenaMonto = [NSString stringWithFormat:@"$ %@", [totIngresos stringValue]];
+    
+    self.lblMonto.text = cadenaMonto ;
 
 }
 
@@ -51,9 +58,9 @@
     //Metodo disparado por el boton de guardar
     PFObject *testObject = [PFObject objectWithClassName:@"registrar"];
     
+    
     testObject[@"tipo"] = self.txtTipo.text;
     testObject[@"categoria"] = self.txtCategoria.text;
-    testObject[@"fecha"] = self.txtFecha.text;
     
     //Formateador para crear numeros desde un NSString
     NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
@@ -69,11 +76,21 @@
     testObject[@"importe"] = importe;
     testObject[@"fecha"] = fecha;
     
-    if([testObject saveInBackground]){
+    //Relacion conLugar en Parse
+    PFObject *objLugar = [PFObject objectWithClassName:@"registralugar"];
+    objLugar[@"nombre"] = self.txtLugar.text;
+    
+    //agregar relacion con registrar
+    //objLugar[@"parent"] = testObject;
+    PFRelation *relation = [objLugar relationForKey:@"registralugar"];
+    [relation addObject:testObject];
+    
+    if([objLugar saveInBackground]){
         self.txtTipo.text = NULL;
         self.txtCategoria.text = NULL;
         self.txtImporte.text = NULL;
         self.txtFecha.text = NULL;
+        self.txtLugar.text = NULL;
 
 
 

@@ -122,15 +122,16 @@
         [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
         
         NSString *fecha_str = [dateFormatter stringFromDate:fechaRegistrar];
-        //NSString *lugarRegistrar = [object objectForKey:@"lugar"];
-
+        NSString *lugarRegistrar = [object objectForKey:@"lugar"];
+        
+        NSLog(@"%@", [object objectForKey:@"lugar"]);
 
         
         segundoView.tipo = tipoRegistrar;
         segundoView.categoria = categoriaRegistrar;
         segundoView.importe = [importeRegistrar stringValue];
         segundoView.fecha = fecha_str;
-        //segundoView.lugar = lugarRegistrar;
+        segundoView.lugar = lugarRegistrar;
         
     }
 }

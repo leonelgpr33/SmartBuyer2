@@ -9,6 +9,7 @@
 #import "Presupuesto.h"
 #import "SWRevealViewController.h"
 #import <Parse/Parse.h>
+#import "VariablesGlobales.h"
 
 @interface Presupuesto ()
 
@@ -70,7 +71,9 @@
     testObject[@"seguros"] = seguros;
     testObject[@"tarjetas"] = tarjetas;
     testObject[@"otros"] = otros;
-
+    
+    totIngresos = ingresos;
+    
     if([testObject saveInBackground]){
         self.txtIngresos.text = NULL;
         self.txtRentas.text = NULL;

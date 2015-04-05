@@ -34,7 +34,7 @@
     self.txtCategoria.text = categoria;
     self.txtFecha.text = fecha;
     self.txtImporte.text = importe;
-    //self.txtLugar.text = lugar;
+    self.txtLugar.text = lugar;
 
 
     // Do any additional setup after loading the view.

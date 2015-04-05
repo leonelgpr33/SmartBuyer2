@@ -8,6 +8,9 @@
 
 #import "Comportamiento.h"
 #import "SWRevealViewController.h"
+#import "VariablesGlobales.h"
+
+VariablesGlobales *global;
 
 @interface Comportamiento ()
 
@@ -17,6 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    totIngresos = 0;
     
     self.title=@"Comportamiento Financiero";
 
