@@ -61,6 +61,7 @@
     
     testObject[@"tipo"] = self.txtTipo.text;
     testObject[@"categoria"] = self.txtCategoria.text;
+    testObject[@"lugar"] = self.txtLugar.text;
     
     //Formateador para crear numeros desde un NSString
     NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
@@ -76,16 +77,16 @@
     testObject[@"importe"] = importe;
     testObject[@"fecha"] = fecha;
     
-    //Relacion conLugar en Parse
+/*    //Relacion conLugar en Parse
     PFObject *objLugar = [PFObject objectWithClassName:@"registralugar"];
     objLugar[@"nombre"] = self.txtLugar.text;
     
     //agregar relacion con registrar
     //objLugar[@"parent"] = testObject;
     PFRelation *relation = [objLugar relationForKey:@"registralugar"];
-    [relation addObject:testObject];
+    [relation addObject:testObject];*/
     
-    if([objLugar saveInBackground]){
+    if([testObject saveInBackground]){
         self.txtTipo.text = NULL;
         self.txtCategoria.text = NULL;
         self.txtImporte.text = NULL;

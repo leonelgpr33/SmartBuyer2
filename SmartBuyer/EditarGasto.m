@@ -56,5 +56,39 @@
 */
 
 - (IBAction)btnGuardar:(id)sender {
+    //Metodo disparado por el boton de guardar
+    PFObject *testObject = [PFObject objectWithClassName:@"registrar"];
+    
+    
+
+    testObject[@"lugar"] = self.txtLugar.text;
+    
+    //Formateador para crear numeros desde un NSString
+    NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
+    f.numberStyle = NSNumberFormatterDecimalStyle;
+    
+    NSDateFormatter *d = [[NSDateFormatter alloc] init];
+    d.dateStyle = NSDateFormatterShortStyle;
+    
+    //Crear variables y asignar valor desde el formateador (f)
+    NSNumber *importe = [f numberFromString:self.txtImporte.text];
+    NSDate *fecha = [d dateFromString:self.txtFecha.text];
+    
+    testObject[@"importe"] = importe;
+    testObject[@"fecha"] = fecha;
+    
+    if([testObject saveInBackground]){
+
+        self.txtImporte.text = NULL;
+        self.txtFecha.text = NULL;
+        self.txtLugar.text = NULL;
+        
+        
+        
+        NSLog(@"Guardado correctamente");
+    }else{
+        NSLog(@"Error al guardar los datos");
+    }
+
 }
 @end
